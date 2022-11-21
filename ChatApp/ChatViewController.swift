@@ -13,5 +13,15 @@ import SDWebImage
 import MessageKit
 import GoogleSignIn
 
+class ChatViewController : UIViewController {
 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    
+    
+}
 
