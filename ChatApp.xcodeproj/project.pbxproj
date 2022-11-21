@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B7E9D2E6292BD5D2003036EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D2E5292BD5D2003036EE /* AppDelegate.swift */; };
 		B7E9D2E8292BD5D2003036EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D2E7292BD5D2003036EE /* SceneDelegate.swift */; };
-		B7E9D2EA292BD5D2003036EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D2E9292BD5D2003036EE /* ViewController.swift */; };
+		B7E9D2EA292BD5D2003036EE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D2E9292BD5D2003036EE /* ChatViewController.swift */; };
 		B7E9D2ED292BD5D2003036EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E9D2EB292BD5D2003036EE /* Main.storyboard */; };
 		B7E9D2EF292BD5D3003036EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E9D2EE292BD5D3003036EE /* Assets.xcassets */; };
 		B7E9D2F2292BD5D3003036EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E9D2F0292BD5D3003036EE /* LaunchScreen.storyboard */; };
@@ -45,17 +45,25 @@
 		B7E9D337292BD936003036EE /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = B7E9D336292BD936003036EE /* MessageKit */; };
 		B7E9D33A292BD962003036EE /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B7E9D339292BD962003036EE /* GoogleSignIn */; };
 		B7E9D33C292BD962003036EE /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B7E9D33B292BD962003036EE /* GoogleSignInSwift */; };
+		B7E9D33E292BDA4D003036EE /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D33D292BDA4D003036EE /* Chat.swift */; };
+		B7E9D340292BDA54003036EE /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D33F292BDA54003036EE /* ChatUser.swift */; };
+		B7E9D342292BDA61003036EE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9D341292BDA61003036EE /* Message.swift */; };
+		B7E9D344292BDB27003036EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7E9D343292BDB27003036EE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7E9D2E2292BD5D2003036EE /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E9D2E5292BD5D2003036EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7E9D2E7292BD5D2003036EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7E9D2E9292BD5D2003036EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7E9D2E9292BD5D2003036EE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B7E9D2EC292BD5D2003036EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7E9D2EE292BD5D3003036EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7E9D2F1292BD5D3003036EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7E9D2F3292BD5D3003036EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E9D33D292BDA4D003036EE /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		B7E9D33F292BDA54003036EE /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		B7E9D341292BDA61003036EE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B7E9D343292BDB27003036EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +130,15 @@
 			children = (
 				B7E9D2E5292BD5D2003036EE /* AppDelegate.swift */,
 				B7E9D2E7292BD5D2003036EE /* SceneDelegate.swift */,
-				B7E9D2E9292BD5D2003036EE /* ViewController.swift */,
+				B7E9D2E9292BD5D2003036EE /* ChatViewController.swift */,
 				B7E9D2EB292BD5D2003036EE /* Main.storyboard */,
 				B7E9D2EE292BD5D3003036EE /* Assets.xcassets */,
 				B7E9D2F0292BD5D3003036EE /* LaunchScreen.storyboard */,
 				B7E9D2F3292BD5D3003036EE /* Info.plist */,
+				B7E9D343292BDB27003036EE /* GoogleService-Info.plist */,
+				B7E9D33D292BDA4D003036EE /* Chat.swift */,
+				B7E9D33F292BDA54003036EE /* ChatUser.swift */,
+				B7E9D341292BDA61003036EE /* Message.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -230,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E9D2F2292BD5D3003036EE /* LaunchScreen.storyboard in Resources */,
+				B7E9D344292BDB27003036EE /* GoogleService-Info.plist in Resources */,
 				B7E9D2EF292BD5D3003036EE /* Assets.xcassets in Resources */,
 				B7E9D2ED292BD5D2003036EE /* Main.storyboard in Resources */,
 			);
@@ -242,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E9D2EA292BD5D2003036EE /* ViewController.swift in Sources */,
+				B7E9D2EA292BD5D2003036EE /* ChatViewController.swift in Sources */,
+				B7E9D33E292BDA4D003036EE /* Chat.swift in Sources */,
 				B7E9D2E6292BD5D2003036EE /* AppDelegate.swift in Sources */,
+				B7E9D342292BDA61003036EE /* Message.swift in Sources */,
+				B7E9D340292BDA54003036EE /* ChatUser.swift in Sources */,
 				B7E9D2E8292BD5D2003036EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

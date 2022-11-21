@@ -13,13 +13,5 @@ import SDWebImage
 import MessageKit
 import GoogleSignIn
 
-class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
-
-}
 
