@@ -17,6 +17,7 @@ class ChatsViewModel {
     let service = Webservice()
     var messages = [Message]()
     var delegate: ChatsVMDelegate?
+    var choosenUser: Message?
     
     let images = [UIImage(named: "billgates"),
                   UIImage(named: "elonmusk"),
