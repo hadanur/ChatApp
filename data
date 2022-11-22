@@ -1,0 +1,54 @@
+{
+  "chats": [
+    {
+    "message": "Naber",
+    "time": "12:21",
+    "isMessageSendedByMainUser": false
+    },
+     {
+      "message": "İyidir senden naber?",
+      "time": "12:28",
+      "isMessageSendedByMainUser": true
+    },
+    {
+      "message": "İyi, dünki maçı izledin mi?",
+      "time": "12:37",
+      "isMessageSendedByMainUser": false
+    },
+    {
+      "message": "Hayır, işim vardı",
+      "time": "12:38",
+      "isMessageSendedByMainUser": true
+    },
+    {
+      "message": "Yani 7-0 kazandığımız maçı cidden izlemedin mi ya",
+      "time": "12:40",
+      "isMessageSendedByMainUser": false
+    },
+    {
+      "message": "Sorma kral",
+      "time": "12:42",
+      "isMessageSendedByMainUser": true
+    },
+    {
+      "message": "Antrenman bitince yaz takılak",
+      "time": "12:42",
+      "isMessageSendedByMainUser": true
+    },
+    {
+      "message": "Tamam",
+      "time": "12:44",
+      "isMessageSendedByMainUser": false
+    },
+    {
+      "message": "Çıktım şimdi antrenmandan",
+      "time": "16:03",
+      "isMessageSendedByMainUser": false
+    },
+    {
+      "message": "15 dk ya in",
+      "time": "16:04",
+      "isMessageSendedByMainUser": false
+    }
+  ]
+}
