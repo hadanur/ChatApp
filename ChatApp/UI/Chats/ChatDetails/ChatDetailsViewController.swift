@@ -18,7 +18,7 @@ class ChatDetailsViewController: UIViewController {
         tableView.separatorStyle = .none
         viewModel.delegate = self
         viewModel.fetchMessages()
-        self.title = viewModel.selectedUser?.name
+        self.title = viewModel.selectedMessage?.name
     }
 }
 
@@ -34,7 +34,7 @@ extension ChatDetailsViewController: UITableViewDelegate, UITableViewDataSource 
         
         let data = viewModel.chats[indexPath.row]
         
-        if viewModel.chats[indexPath.row].isMessageSendedByMainUser == true {
+        if data.isMessageSendedByMainUser == true {
             mainUserCell.selectionStyle = .none
             mainUserCell.mainUserMessageLabel.text = data.message
             mainUserCell.mainUserMessageTime.text = data.time

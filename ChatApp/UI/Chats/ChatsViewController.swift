@@ -53,7 +53,7 @@ extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.choosenUser = viewModel.messages[indexPath.row]
+        viewModel.choosenMessage = viewModel.messages[indexPath.row]
         performSegue(withIdentifier: "toChatDetailsVC", sender: nil)
     }
 }

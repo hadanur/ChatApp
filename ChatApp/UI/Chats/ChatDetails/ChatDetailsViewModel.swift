@@ -16,7 +16,7 @@ class ChatDetailsViewModel {
     let service = Webservice()
     var chats = [Chat]()
     var delegate: ChatDetailsVMDelegate?
-    var selectedUser: Message?
+    var selectedMessage: Message?
     
     func fetchMessages() {
         service.downloadMessages { result in
