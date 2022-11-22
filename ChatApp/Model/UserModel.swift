@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct User: Codable {
-    let messages: [Messages]
+struct Chats: Codable {
+    let messages: [Message]
 }
 
-struct Messages: Codable {
+struct Message: Codable {
     let name: String
-    let text: String
+    let message: String
     let time: String
     let messageCount: String
 }

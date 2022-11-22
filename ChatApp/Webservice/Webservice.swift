@@ -9,16 +9,16 @@ import Foundation
 
 class Webservice {
     
-    func downloadChats(completion : @escaping (User?) -> ()) {
+    func downloadChats(completion : @escaping (Chats?) -> ()) {
         
-        let url = URL(string: "https://raw.githubusercontent.com/kadanur/HadanurRaM/main/list.json?token=GHSAT0AAAAAABZEF7X6MQDZ7EPBR3BKQTNUY34AG7Q")
+        let url = URL(string: "https://raw.githubusercontent.com/hadanur/PL/adsadada/data.json")
         URLSession.shared.dataTask(with: url!) { data, response, error in
             if let error = error {
                 print(error.localizedDescription)
                 completion(nil)
             } else if let data = data {
                 do {
-                    let userList = try JSONDecoder().decode(User.self, from: data)
+                    let userList = try JSONDecoder().decode(Chats.self, from: data)
                     print(userList)
                     completion(userList)
                 } catch {

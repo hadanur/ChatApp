@@ -6,12 +6,6 @@
 //
 
 import UIKit
-import FirebaseCore
-import FirebaseAuth
-import FirebaseFirestore
-import SDWebImage
-import MessageKit
-import GoogleSignIn
 
 class ChatsViewController : UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -30,15 +24,15 @@ class ChatsViewController : UIViewController {
 extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.chats.count
+        return viewModel.messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatsTableViewCell") as! ChatsTableViewCell
-        let data = viewModel.chats[indexPath.row]
+        let data = viewModel.messages[indexPath.row]
         cell.selectionStyle = .none
         cell.nameLabel.text = data.name
-        cell.messageLabel.text = data.text
+        cell.messageLabel.text = data.message
         cell.userImage.image = viewModel.images[indexPath.row]
         
         if data.messageCount == "0" {

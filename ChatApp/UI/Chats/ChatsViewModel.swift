@@ -15,7 +15,7 @@ protocol ChatsVMDelegate {
 
 class ChatsViewModel {
     let service = Webservice()
-    var chats = [Messages]()
+    var messages = [Message]()
     var delegate: ChatsVMDelegate?
     
     let images = [UIImage(named: "billgates"),
@@ -29,7 +29,7 @@ class ChatsViewModel {
     func fetchChats() {
         service.downloadChats { result in
             if let result = result {
-                self.chats = result.messages
+                self.messages = result.messages
                 self.delegate?.fetchChatsOnSuccess()
             } else {
                 self.delegate?.fetchChatsOnUnSuccess()
