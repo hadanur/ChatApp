@@ -19,8 +19,14 @@ class ChatsViewController : UIViewController {
         viewModel.delegate = self
         viewModel.fetchChats()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toChatDetailsVC" {
+            let destinationVC = segue.destination as! ChatDetailsViewController
+            destinationVC.viewModel.selectedUser = viewModel.choosenUser
+        }
+    }
 }
-
 extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,6 +50,11 @@ extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
 
         cell.timeLabel.text = data.time
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.choosenMessage = viewModel.messages[indexPath.row]
+        performSegue(withIdentifier: "toChatDetailsVC", sender: nil)
     }
 }
 
